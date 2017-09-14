@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">开放平台demo</string>
+    <string name="play_time">录制时间:%s</string>
+    <string name="record_fhr_title">胎心率 FHR/BPM</string>
+</resources>

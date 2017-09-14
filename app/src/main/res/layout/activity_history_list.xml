@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_history_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jumper.openplatformdemo.fetalheart.HistoryListActivity">
+
+    <ListView
+        android:id="@+id/listView"
+        style="@style/layout_width_full"
+        android:divider="#00000000"
+        android:dividerHeight="10dp"
+        android:padding="20dp"
+        />
+</RelativeLayout>

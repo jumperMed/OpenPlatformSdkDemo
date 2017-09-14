@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.jumper.openplatformdemo">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".MainActivity_"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".fetalheart.PlayRecorderActivity_"
+            android:screenOrientation="portrait"/>
+
+        <!-- 外网 CYB-->
+
+                <!--<meta-data-->
+                <!--android:name="JUMPER_APPID"-->
+                <!--android:value="F9D005E180FC4543A5F6481E29B911C6" />-->
+                <meta-data
+                android:name="JUMPER_APPID"
+                android:value="A9C7559C5C994A9D84A39859493D2479" />
+
+
+
+        <!-- android:text="CCC19B122DC74C609299E9687880DC93" -->
+        <!-- android:text="583A9B21DBD94322BF96DAC340E990B8" -->
+
+
+        <!-- 0.2 -->
+        <!--<meta-data-->
+            <!--android:name="JUMPER_APPID"-->
+            <!--android:value="6EA277FE36F344F39F5DCE67D13A1007"/>-->
+
+        <activity
+            android:name=".fetalheart.HistoryListActivity_"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".bledevice.BleDeviceDemoActivity_"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+        <!-- 目前，如果不用更改Theme ，可以不用添加此activity -->
+        <activity
+            android:name="com.jumper.jumperopenplatform.RecordingActivity"
+            android:theme="@style/AppTheme.My.Recording"
+            android:launchMode="singleTask"
+            tools:replace="android:theme"
+            android:screenOrientation="portrait"/>
+
+        <!--<activity-->
+            <!--android:name="com.jumper.jumperopenplatform.DeviceScanActivity"-->
+            <!--android:theme="@style/AppTheme.NoActionBar.ScanDevice"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:windowSoftInputMode="adjustPan"/>-->
+
+
+    </application>
+
+</manifest>

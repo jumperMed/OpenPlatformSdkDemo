@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_rec_shape">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        style="@style/layout_wrap"
+        android:padding="10dp"
+        android:src="@mipmap/fetal_icon"/>
+
+    <TextView
+        android:id="@+id/tvTime"
+        style="@style/layout_wrap"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@+id/ivIcon"
+        android:ellipsize="start"
+        android:singleLine="true"
+        android:textColor="@color/color_666666"
+        android:textSize="16sp"
+        tools:text="2015-05-09 15:45:21"/>
+
+
+    <TextView
+        android:id="@+id/tvContent"
+        style="@style/layout_wrap"
+        android:layout_alignBottom="@+id/ivIcon"
+        android:layout_alignLeft="@+id/tvTime"
+        android:layout_marginBottom="14dp"
+        android:layout_toRightOf="@+id/ivIcon"
+        android:drawableLeft="@mipmap/fetal_adult3"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_666666"
+        android:textSize="15sp"
+        tools:text="1412"/>
+</RelativeLayout>

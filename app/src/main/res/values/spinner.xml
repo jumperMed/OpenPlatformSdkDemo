@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="devicetype">
+        <item>耳温计</item>
+        <item>血氧仪</item>
+        <item>体重秤</item>
+    </string-array>
+</resources>

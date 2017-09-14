@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <!-- 标题栏背景色-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- 修改标题栏文字颜色 -->
+        <item name="android:textColorPrimary">@color/text_878787</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <!-- 修改界面颜色-->
+    <style name="chartViewColorModify">
+        <!-- 网格粗线条颜色-->
+        <item name="adCrudeLineColor">#003344</item>
+        <!-- 网格细线条颜色-->
+        <item name="adThinLineColor">#003344</item>
+        <!-- 分钟文字的颜色-->
+        <item name="adTextPaintColor">#333333</item>
+        <!--  曲线的线条颜色 -->
+        <item name="adDataLineColor">#6d696a</item>
+
+    </style>
+
+
+    <style name="AppTheme.My.Recording" parent="OpenPlatformTheme.NoActionBar.Recording">
+        <item name="adChartViewStyle">@style/chartViewColorModify</item>
+        <!--<item name="startBackground">@drawable/shape_red_round</item>-->
+        <!--<item name="fetalMoveBackground">@mipmap/fetal_count</item>-->
+        <!--<item name="resetTocoImageSrc">@mipmap/fetal_btn_o</item>-->
+        <!--<item name="stopBackgroud">@mipmap/fetal_over</item>-->
+
+
+    </style>
+
+    <!--<style name="AppTheme.NoActionBar.ScanDevice" parent="AppTheme.NoActionBar">-->
+        <!--&lt;!&ndash;<item name="adChartViewStyle">@style/chartViewColorModify</item>&ndash;&gt;-->
+
+        <!--<item name="idelPic">@mipmap/icon_holy</item>-->
+        <!--<item name="scanBtnBackgroud">@drawable/selector_shape_round</item>-->
+
+    <!--</style>-->
+
+
+    <!--<attr name="startBackground" format="color|reference"/>-->
+    <!--<attr name="fetalMoveBackground" format="color"/>-->
+    <!--<attr name="fetalMoveTextColor" format="color"/>-->
+    <!--<attr name="resetTocoImageSrc" format="reference"/>-->
+    <!--<attr name="stopBackgroud" format="color"/>-->
+
+
+</resources>

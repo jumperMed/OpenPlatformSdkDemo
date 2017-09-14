@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/activity_main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              tools:context="com.jumper.openplatformdemo.MainActivity">
+
+    <TextView
+        android:id="@+id/tvVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/etAppid"
+        style="@style/layout_width_full"
+        android:hint="JUMPER_APPID"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="拦截Mac的处理"
+        />
+
+    <RadioGroup
+        android:id="@+id/rgColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb"
+            android:text="通过"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbModify"
+            android:text="不通过，mac不对"
+            />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_red_round"
+        android:gravity="center"
+        android:onClick="enterFetalHeart"
+        android:padding="10dp"
+        android:text="开启 胎心监测SDK"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_large_plus"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_red_round"
+        android:gravity="center"
+        android:onClick="historyFetalHeart"
+        android:padding="10dp"
+        android:text="本地胎心历史数据"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_large_plus"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_red_round"
+        android:gravity="center"
+        android:onClick="enterTempreture"
+        android:padding="10dp"
+        android:text="开启 耳温、血氧、体重"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_large_plus"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="语言切换:"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+
+    <RadioGroup
+        android:id="@+id/rgLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/rbChina"
+            style="@style/layout_wrap"
+            android:checked="true"
+            android:padding="5dp"
+            android:text="中文"/>
+
+        <RadioButton
+            android:id="@+id/rbEnglish"
+            style="@style/layout_wrap"
+            android:padding="5dp"
+            android:text="英文"/>
+    </RadioGroup>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FetalHeart OpenPlatform Demo</string>
+    <string name="play_time">record time:%s</string>
+    <string name="record_fhr_title">Fetal heart beat FHR/BPM</string>
+</resources>

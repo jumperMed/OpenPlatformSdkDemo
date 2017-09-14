@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+
+
+def keyAlias_string = 'demokey'
+def keyStorePath = 'jarsource/demokey.jks'
+def password = '123456'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.jumper.openplatformdemo"
+        minSdkVersion 11
+        targetSdkVersion 21
+        versionCode 2
+        versionName "Test v1.2"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+
+
+    signingConfigs {
+        release {
+            keyAlias keyAlias_string
+            keyPassword password
+            storeFile file(keyStorePath)
+            storePassword password
+        }
+
+        debug {
+            keyAlias keyAlias_string
+            keyPassword password
+            storeFile file(keyStorePath)
+            storePassword password
+        }
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        build {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+
+def AAVersion = '4.3.0'
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    testCompile 'junit:junit:4.12'
+    compile 'com.google.code.gson:gson:2.8.0'
+    annotationProcessor "org.androidannotations:androidannotations:$AAVersion"
+    compile "org.androidannotations:androidannotations-api:$AAVersion"
+
+    compile "com.jumper.librarybin:jumperopenplatform:1.1.4"
+//    compile(name: 'jumperopenplatform-release-1.1.0', ext: 'aar')
+//    compile(project(':jumperopenplatform')) {
+//        transitive false
+//    }
+}
