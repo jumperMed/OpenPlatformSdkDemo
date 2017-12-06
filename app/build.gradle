@@ -13,8 +13,8 @@ android {
         applicationId "com.jumper.openplatformdemo"
         minSdkVersion 11
         targetSdkVersion 21
-        versionCode 2
-        versionName "Test v1.2"
+        versionCode 3
+        versionName "Test v1.3"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
@@ -73,7 +73,7 @@ dependencies {
     annotationProcessor "org.androidannotations:androidannotations:$AAVersion"
     compile "org.androidannotations:androidannotations-api:$AAVersion"
 
-    compile "com.jumper.librarybin:jumperopenplatform:1.1.4"
+    compile "com.jumper.librarybin:jumperopenplatform:1.1.8.1"
 //    compile(name: 'jumperopenplatform-release-1.1.0', ext: 'aar')
 //    compile(project(':jumperopenplatform')) {
 //        transitive false

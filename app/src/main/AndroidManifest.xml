@@ -26,25 +26,12 @@
             android:name=".fetalheart.PlayRecorderActivity_"
             android:screenOrientation="portrait"/>
 
-        <!-- 外网 CYB-->
-
-                <!--<meta-data-->
-                <!--android:name="JUMPER_APPID"-->
-                <!--android:value="F9D005E180FC4543A5F6481E29B911C6" />-->
-                <meta-data
-                android:name="JUMPER_APPID"
-                android:value="A9C7559C5C994A9D84A39859493D2479" />
+        <meta-data
+        android:name="JUMPER_APPID"
+        android:value="A9C7559C5C994A9D84A39859493D2479" />
 
 
 
-        <!-- android:text="CCC19B122DC74C609299E9687880DC93" -->
-        <!-- android:text="583A9B21DBD94322BF96DAC340E990B8" -->
-
-
-        <!-- 0.2 -->
-        <!--<meta-data-->
-            <!--android:name="JUMPER_APPID"-->
-            <!--android:value="6EA277FE36F344F39F5DCE67D13A1007"/>-->
 
         <activity
             android:name=".fetalheart.HistoryListActivity_"
@@ -63,7 +50,7 @@
             tools:replace="android:theme"
             android:screenOrientation="portrait"/>
 
-        <!--<activity-->
+            <!--<activity-->
             <!--android:name="com.jumper.jumperopenplatform.DeviceScanActivity"-->
             <!--android:theme="@style/AppTheme.NoActionBar.ScanDevice"-->
             <!--android:screenOrientation="portrait"-->
