@@ -6,7 +6,9 @@ import android.text.TextUtils;
 import android.util.Log;
 
 import com.jumper.jumperopenplatform.MacInterceptor;
+import com.jumper.jumperopenplatform.bean.FetalHeartCallBackInfo;
 import com.jumper.jumperopenplatform.bean.ResultInfo;
+import com.jumper.openplatformdemo.util.ToastUtil;
 
 /**
  * Created by Terry on 2017/9/11 14:27.
@@ -76,5 +78,19 @@ public class MyIntercepter extends MacInterceptor implements Parcelable{
         }
 
         return info;
+    }
+
+
+    @Override
+    public void onSaveSuccess(String mac) {
+        super.onSaveSuccess(mac);
+//        ToastUtil.show("你好，上传完成。我是主线程 ");
+    }
+
+    @Override
+    public void onResultClick(boolean isUpload, FetalHeartCallBackInfo info) {
+        super.onResultClick(isUpload, info);
+        ToastUtil.show("isUpload--"+isUpload+
+                "--FetalHeartCallBackInfo:" +(isUpload ? info.toString():""));
     }
 }

@@ -149,7 +149,10 @@ public class MainActivity extends AppCompatActivity {
 
         String url = rgColor.getCheckedRadioButtonId() == R.id.rb?"http://www.baidu.com":"";
 
-        DeviceScanActivity.start(this,new MyIntercepter(url,new String[]{""}),false);
+//        DeviceScanActivity.start(this,new MyIntercepter(url,new String[]{""}),false);
+
+        // 如果需要设置 取消时，退出页面
+        DeviceScanActivity.start(this,new MyIntercepter(url,new String[]{""}),false,true);
 
     }
 
